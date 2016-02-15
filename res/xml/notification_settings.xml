@@ -143,24 +143,14 @@
                 android:title="@string/manage_zen_access_title"
                 android:persistent="false"
                 android:fragment="com.android.settings.notification.ZenAccessSettings" />
-
-        <PreferenceCategory
-        android:key="quicksettings_cat"
-        android:title="@string/quicksettings_cat" >
-   
-        <PreferenceScreen
+        </PreferenceCategory> 
+        
+       <PreferenceScreen
                 android:title="@string/quick_settings_title"
                 android:summary="@string/quick_settings_summary" >
             <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.android.systemui"
-                    android:targetClass="com.android.systemui.tuner.QsActivity" />
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.QsActivity" />
        </PreferenceScreen>
-       </PreferenceCategory>	
-	
-	
-       <PreferenceCategory
-        android:key="notification_drawer_cat"
-        android:title="@string/notification_drawer_cat" >
-       </PreferenceCategory>
 
 </PreferenceScreen>
